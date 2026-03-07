@@ -72,7 +72,14 @@ function Experience() {
   )
 }
 
-function Job({ role, company, period, bullets }) {
+interface JobProps {
+  role: string;
+  company: string;
+  period: string;
+  bullets: string[];
+}
+
+function Job({ role, company, period, bullets }: JobProps) {
   return (
     <div>
       <h3 className="font-semibold text-white">
@@ -84,7 +91,7 @@ function Job({ role, company, period, bullets }) {
       </p>
 
       <ul className="list-disc ml-5 text-slate-300 text-sm space-y-1">
-        {bullets.map((b, i) => (
+        {bullets.map((b: string, i: number) => (
           <li key={i}>{b}</li>
         ))}
       </ul>
