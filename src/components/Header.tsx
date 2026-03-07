@@ -12,20 +12,19 @@ export function Header() {
   const primaryStack = [
     {
       name: "React",
-      icon: "/icons/react.svg",
+      icon: "icons/react.svg",
       color: "text-cyan-300 border-cyan-400/40 bg-cyan-500/10"
     },
     {
       name: "Angular",
-      icon: "/icons/angular.svg",
+      icon: "icons/angular.svg",
       color: "text-red-300 border-red-400/40 bg-red-500/10"
     },
     {
       name: "Vue",
-      icon: "/icons/vue.svg",
+      icon: "icons/vue.svg",
       color: "text-emerald-300 border-emerald-400/40 bg-emerald-500/10"
-    },
-
+    }
   ]
 
   const secondaryStack = ["TypeScript", "Next.js", "CSS", "Tailwind", "HTML", "FlexBox", "Grid" ]
@@ -36,7 +35,7 @@ export function Header() {
       <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-cyan-500/5 via-blue-500/5 to-purple-500/5 pointer-events-none"></div>
 
       <img
-        src="/profile.jpg"
+        src={`${import.meta.env.BASE_URL}profile.jpg`}
         className="w-20 h-20 rounded-xl object-cover border border-slate-700 relative z-10"
         alt="Victor Henrique Pignataro"
       />
@@ -80,7 +79,7 @@ export function Header() {
               className={`flex items-center gap-1 text-xs px-3 py-1 rounded-md border font-medium ${tech.color}`}
             >
               <img
-                src={tech.icon}
+                src={`${import.meta.env.BASE_URL}${tech.icon}`}
                 className="w-3.5 h-3.5"
                 alt={tech.name}
               />
