@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Henrique Pignataro - Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2563eb;
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #22d3ee;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: var(--text);
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: var(--card);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    header {
+      padding: 40px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      opacity: 0.9;
+      font-weight: 500;
+    }
+
+    .contact {
+      margin-top: 15px;
+      font-size: 0.95rem;
+    }
+
+    .content {
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 40px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+      color: var(--accent);
+      border-bottom: 2px solid rgba(255,255,255,0.1);
+      padding-bottom: 8px;
+    }
+
+    .section {
+      margin-bottom: 35px;
+    }
+
+    .job {
+      margin-bottom: 20px;
+    }
+
+    .job h3 {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .job span {
+      display: block;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+
+    .job p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--text);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.1);
+      padding: 6px 10px;
+      border-radius: 8px;
+      font-size: 0.8rem;
+      margin: 4px 4px 0 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      background: #0b1220;
+    }
+
+    @media (max-width: 768px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Victor Henrique Pignataro</h1>
+      <p>Frontend Software Developer</p>
+      <div class="contact">
+        Age 28 • Single<br>
+        Prudente de Moraes St. - 1369, Parque Industrial<br>
+        São José do Rio Preto – SP, Brazil<br>
+        +55 (17) 99225-9449 • victorpignataro@msn.com
+      </div>
+    </header>
+
+    <div class="content">
+      <div>
+        <div class="section">
+          <h2>Professional Summary</h2>
+          <p>
+            Professional software developer focused on frontend applications, with strong attention to UI/UX usability.
+            Passionate about building visual interfaces that add value to products by projecting information in an intuitive
+            and clear way. Experienced with Angular, ReactJS and VueJS, seeking challenges in building advanced and reusable
+            components that integrate a harmonious and maintainable visual system.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Professional Experience</h2>
+
+          <div class="job">
+            <h3>Developer – Neppo Tecnologia</h3>
+            <span>12/2022 – Present</span>
+            <p>
+              Frontend developer focused on refactoring screen usability and improving user experience.
+              Participated in projects such as attendance layout experience, a complete ticket platform frontend,
+              and a bot builder tree component.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Front-end Developer – Neppo Tecnologia / Algar Telecom</h3>
+            <span>04/2020 – 12/2022</span>
+            <p>
+              Worked on a project for partner company Algar Telecom. Developed frontend features for an inventory
+              control and management application for SIM cards and IoT products. Participated in a version transition
+              using ReactJS and Ant Design.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Fullstack Developer – MixSolutions</h3>
+            <span>07/2019 – 04/2020</span>
+            <p>
+              Developed software for call center service control and inventory management in the PBX/IP telephony industry.
+              Led the reconstruction and modernization of the frontend interface, improving usability and management processes.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Intern Developer Analyst – Neppo Tecnologia</h3>
+            <span>04/2018 – 07/2019</span>
+            <p>
+              Participated in training programs and contributed to evaluation software development. After assessment,
+              transferred to production teams to contribute to company development projects.
+            </p>
+          </div>
+
+          <div class="job">
+            <h3>Computer Support – Pignatari Consultores Contábeis</h3>
+            <span>2013 – 2014</span>
+            <p>
+              Maintained office network infrastructure, program configuration, and hardware repair and replacement.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section">
+          <h2>Education</h2>
+          <p>Bachelor Degree in Computer Science<br>
+          Federal University of Uberlândia</p>
+        </div>
+
+        <div class="section">
+          <h2>Languages</h2>
+          <ul>
+            <li>Portuguese – Native</li>
+            <li>English – Intermediate</li>
+            <li>Spanish – Basic</li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Technologies</h2>
+          <div>
+            <span class="badge">ReactJS</span>
+            <span class="badge">NextJS</span>
+            <span class="badge">Angular</span>
+            <span class="badge">VueJS</span>
+            <span class="badge">Redux</span>
+            <span class="badge">SWR</span>
+            <span class="badge">Ant Design</span>
+            <span class="badge">Chart.js</span>
+            <span class="badge">GraphQL</span>
+            <span class="badge">JavaScript (ES6)</span>
+            <span class="badge">TypeScript</span>
+            <span class="badge">HTML5/CSS3</span>
+            <span class="badge">MySQL</span>
+            <span class="badge">PostgreSQL</span>
+            <span class="badge">MongoDB</span>
+            <span class="badge">Java</span>
+            <span class="badge">Spring Boot</span>
+            <span class="badge">PHP</span>
+            <span class="badge">Laravel</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Git</span>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2>Courses & Certifications</h2>
+          <ul>
+            <li>English Course (Private Teacher)</li>
+            <li>Leadership, Ability to Learn and Resilience – PUC</li>
+            <li>Produce Maintainable CSS With Sass</li>
+            <li>Create Web Page Layouts With CSS</li>
+            <li>Manage Your Code Project With Git & GitHub</li>
+            <li>Build Web Apps with ReactJS</li>
+            <li>Learn Programming With JavaScript</li>
+            <li>VueJS Course – Neppo</li>
+            <li>C++ Course – UFU</li>
+            <li>Cobol Course – UFU</li>
+            <li>Drupal Course – UFU</li>
+            <li>Linux & Office Courses</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © 2026 Victor Henrique Pignataro
+    </footer>
+  </div>
+</body>
+</html>

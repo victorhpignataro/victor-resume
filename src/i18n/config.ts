@@ -9,11 +9,16 @@ const resources = {
         role: "Frontend Software Developer",
         location: "São José do Rio Preto - SP, Brazil",
         age: "years old",
-        single: "Single"
+        single: "Single",
+        portfolio: "Portfolio"
+      },
+      portfolioPage: {
+        title: "Portfolio",
+        back: "Back"
       },
       about: {
         title: "About Me",
-        content: "Professional software developer specialized in frontend applications, with strong attention to UI/UX usability and visual clarity. Passionate about building interfaces that enhance product value by presenting information in an intuitive and meaningful way. Experienced with Angular, React and Vue ecosystems, focused on developing advanced and reusable components that contribute to cohesive, scalable and maintainable design systems."
+        content: "Fullstack developer with more than 7 years of experience in the development of corporate applications using React, Angular, TypeScript, Java and Laravel. Experience in building and modernizing interfaces for multichannel service systems, ticket platforms, IoT applications and visual builders (drag-and-drop), with a focus on componentization, performance and code maintenance. Acting in agile teams, participating from the implementation of new features to the refactoring of legacy systems and evolution of interfaces used in production. Communication with product and design teams for implementation of prototypes created. I use artificial intelligence tools to accelerate technical research, prototyping and continuous learning, maintaining critical analysis of the implemented solutions."
       },
       experience: {
         title: "Experience",
@@ -133,20 +138,40 @@ const resources = {
           "Drupal Course – UFU",
           "Linux & Office Courses"
         ]
+      },
+      portfolioLinks: {
+        title: "Portfolio Links",
+        items: [
+          {
+            name: "Contabil Suite",
+            description: "Accounting management system",
+            url: "https://contabil-suite.victorpignataro.workers.dev/"
+          },
+          {
+            name: "Calendar Events",
+            description: "Event management application",
+            url: "https://calendar-events-lovat.vercel.app/login"
+          }
+        ]
       }
     }
   },
   pt: {
     translation: {
       header: {
-        role: "Desenvolvedor de Software Frontend",
+        role: "Desenvolvedor de Software",
         location: "São José do Rio Preto - SP, Brasil",
         age: "anos",
-        single: "Solteiro"
+        single: "Solteiro",
+        portfolio: "Portfólio"
+      },
+      portfolioPage: {
+        title: "Portfólio",
+        back: "Voltar"
       },
       about: {
         title: "Sobre Mim",
-        content: "Desenvolvedor de software profissional especializado em aplicações frontend, com forte atenção à usabilidade UI/UX e clareza visual. Apaixonado por construir interfaces que agregam valor ao produto, apresentando informações de forma intuitiva e significativa. Experiência com os ecossistemas Angular, React e Vue, focado no desenvolvimento de componentes avançados e reutilizáveis que contribuem para sistemas de design coesos, escaláveis e de fácil manutenção."
+        content: "Desenvolvedor Fullstack com mais de 7 anos de experiência no desenvolvimento de aplicações corporativas utilizando React, Angular, TypeScript, Java e Laravel. Experiência na construção e modernização de interfaces para sistemas de atendimento multicanal, plataformas de tickets, aplicações IoT e construtores visuais (drag-and-drop), com foco em componentização, performance e manutenção de código. Atuação em equipes ágeis, participando desde a implementação de novas funcionalidades até a refatoração de sistemas legados e evolução de interfaces utilizadas em produção. Comunicação com times de produto e design para implementação de protótipos criados. Utilizo ferramentas de inteligência artificial para acelerar pesquisa técnica, prototipação e aprendizado contínuo, mantendo análise crítica das soluções implementadas."
       },
       experience: {
         title: "Experiência",
@@ -267,6 +292,21 @@ const resources = {
           "Curso de Cobol – UFU",
           "Curso de Drupal – UFU",
           "Cursos de Linux e Office"
+        ]
+      },
+      portfolioLinks: {
+        title: "Links do Portfólio",
+        items: [
+          {
+            name: "Contabil Suite",
+            description: "Sistema de gestão contábil",
+            url: "https://contabil-suite.victorpignataro.workers.dev/"
+          },
+          {
+            name: "Calendar Events",
+            description: "Aplicativo de gerenciamento de eventos",
+            url: "https://calendar-events-lovat.vercel.app/login"
+          }
         ]
       }
     }

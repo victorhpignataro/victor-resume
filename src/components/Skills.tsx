@@ -40,16 +40,6 @@ const skills = [
             <span className="text-xs px-2 py-1 rounded-md bg-secondary text-secondary-foreground border">
               {skill.name}
             </span>
-
-            {skill.level && (
-              <div className="w-full h-1.5 bg-muted rounded mt-1 overflow-hidden">
-                <div
-                  className="h-full bg-primary"
-                  style={{ width: `${skill.level}%` }}
-                />
-              </div>
-            )}
-
           </div>
         ))}
       </div>

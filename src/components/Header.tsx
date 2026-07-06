@@ -3,14 +3,16 @@ import {
   Linkedin,
   Mail,
   MapPin,
+  Briefcase,
 } from "lucide-react"
 import { ModeToggle } from "./mode-toggle"
 import { LanguageToggle } from "./LanguageToggle"
 import { useTranslation } from "react-i18next"
+import { Link } from "react-router-dom"
 
 export function Header() {
   const { t } = useTranslation();
-  const age = 28;
+  const age = 29;
 
   const primaryStack = [
     {
@@ -113,13 +115,22 @@ export function Header() {
 
       {/* ACTIONS */}
       <div className="flex flex-col items-end gap-3 justify-between">
-        <div className="flex items-center gap-2">
-          <a href="https://github.com/titipignataro" target="_blank" className="p-2 rounded-md hover:bg-accent">
-            <Github className="w-5 h-5" />
-          </a>
-          <a href="https://www.linkedin.com/in/victor-pignataro-992440101/" target="_blank" className="p-2 rounded-md hover:bg-accent">
-            <Linkedin className="w-5 h-5" />
-          </a>
+        <div className="flex flex-col items-end gap-2">
+          <div className="flex items-center gap-2">
+            <a href="https://github.com/victorhpignataro" target="_blank" className="p-2 rounded-md hover:bg-accent">
+              <Github className="w-5 h-5" />
+            </a>
+            <a href="https://www.linkedin.com/in/victor-pignataro-992440101/" target="_blank" className="p-2 rounded-md hover:bg-accent">
+              <Linkedin className="w-5 h-5" />
+            </a>
+          </div>
+          <Link 
+            to="/portfolio" 
+            className="flex items-center gap-2 text-sm font-medium text-primary hover:text-primary/80 transition-colors"
+          >
+            <Briefcase className="w-4 h-4" />
+            <span>{t('header.portfolio')}</span>
+          </Link>
         </div>
         
         <div className="flex items-center gap-2">
