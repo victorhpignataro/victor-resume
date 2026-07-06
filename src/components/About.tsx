@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 function About() {
   const { t } = useTranslation();
+  const contentArray = t('about.content', { returnObjects: true }) as string[];
 
   return (
     <section className="bg-card p-6 rounded-xl border">
@@ -9,9 +10,11 @@ function About() {
         {t('about.title')}
       </h2>
 
-      <p className="text-muted-foreground leading-relaxed">
-        {t('about.content')}
-      </p>
+      <div className="text-muted-foreground leading-relaxed space-y-2">
+        {contentArray.map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
     </section>
   )
 }

@@ -18,7 +18,13 @@ const resources = {
       },
       about: {
         title: "About Me",
-        content: "Fullstack developer with more than 7 years of experience in the development of corporate applications using React, Angular, TypeScript, Java and Laravel. Experience in building and modernizing interfaces for multichannel service systems, ticket platforms, IoT applications and visual builders (drag-and-drop), with a focus on componentization, performance and code maintenance. Acting in agile teams, participating from the implementation of new features to the refactoring of legacy systems and evolution of interfaces used in production. Communication with product and design teams for implementation of prototypes created. I use artificial intelligence tools to accelerate technical research, prototyping and continuous learning, maintaining critical analysis of the implemented solutions."
+        content: [
+          "Fullstack developer with more than 7 years of experience in the development of corporate applications using React, Angular, TypeScript, Java and Laravel.",
+          "Experience in building and modernizing interfaces for multichannel service systems, ticket platforms, IoT applications and visual builders (drag-and-drop), with a focus on componentization, performance and code maintenance.",
+          "Acting in agile teams, participating from the implementation of new features to the refactoring of legacy systems and evolution of interfaces used in production.",
+          "Communication with product and design teams for implementation of prototypes created.",
+          "I use artificial intelligence tools to accelerate technical research, prototyping and continuous learning, maintaining critical analysis of the implemented solutions."
+        ]
       },
       experience: {
         title: "Experience",
@@ -171,7 +177,13 @@ const resources = {
       },
       about: {
         title: "Sobre Mim",
-        content: "Desenvolvedor Fullstack com mais de 7 anos de experiência no desenvolvimento de aplicações corporativas utilizando React, Angular, TypeScript, Java e Laravel. Experiência na construção e modernização de interfaces para sistemas de atendimento multicanal, plataformas de tickets, aplicações IoT e construtores visuais (drag-and-drop), com foco em componentização, performance e manutenção de código. Atuação em equipes ágeis, participando desde a implementação de novas funcionalidades até a refatoração de sistemas legados e evolução de interfaces utilizadas em produção. Comunicação com times de produto e design para implementação de protótipos criados. Utilizo ferramentas de inteligência artificial para acelerar pesquisa técnica, prototipação e aprendizado contínuo, mantendo análise crítica das soluções implementadas."
+        content: [
+          "Desenvolvedor Fullstack com mais de 7 anos de experiência no desenvolvimento de aplicações corporativas utilizando React, Angular, TypeScript, Java e Laravel.",
+          "Experiência na construção e modernização de interfaces para sistemas de atendimento multicanal, plataformas de tickets, aplicações IoT e construtores visuais (drag-and-drop), com foco em componentização, performance e manutenção de código.",
+          "Atuação em equipes ágeis, participando desde a implementação de novas funcionalidades até a refatoração de sistemas legados e evolução de interfaces utilizadas em produção.",
+          "Comunicação com times de produto e design para implementação de protótipos criados.",
+          "Utilizo ferramentas de inteligência artificial para acelerar pesquisa técnica, prototipação e aprendizado contínuo, mantendo análise crítica das soluções implementadas."
+        ]
       },
       experience: {
         title: "Experiência",

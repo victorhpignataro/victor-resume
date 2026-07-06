@@ -29,10 +29,20 @@ export function Header() {
       name: "Vue",
       icon: "icons/vue.svg",
       color: "text-emerald-700 border-emerald-200 bg-emerald-50 dark:text-emerald-300 dark:border-emerald-400/40 dark:bg-emerald-500/10"
+    },
+    {
+      name: "Laravel",
+      icon: "icons/laravel.svg",
+      color: "text-red-700 border-red-200 bg-red-50 dark:text-red-300 dark:border-red-400/40 dark:bg-red-500/10"
+    },
+    {
+      name: "Spring Boot",
+      icon: "icons/springboot.svg",
+      color: "text-green-700 border-green-200 bg-green-50 dark:text-green-300 dark:border-green-400/40 dark:bg-green-500/10"
     }
   ]
 
-  const secondaryStack = ["TypeScript", "Next.js", "CSS", "Tailwind", "HTML", "FlexBox", "Grid" ]
+  const secondaryStack = ["TypeScript", "CSS", "Tailwind", "HTML", "FlexBox", "Grid" ]
 
   return (
     <header className="relative flex flex-col md:flex-row gap-6 bg-card border rounded-xl p-6">
@@ -87,11 +97,13 @@ export function Header() {
               key={tech.name}
               className={`flex items-center gap-1 text-xs px-3 py-1 rounded-md border font-medium ${tech.color}`}
             >
-              <img
-                src={`${import.meta.env.BASE_URL}${tech.icon}`}
-                className="w-3.5 h-3.5"
-                alt={tech.name}
-              />
+              {tech.icon && (
+                <img
+                  src={`${import.meta.env.BASE_URL}${tech.icon}`}
+                  className="w-3.5 h-3.5"
+                  alt={tech.name}
+                />
+              )}
               {tech.name}
             </span>
           ))}
