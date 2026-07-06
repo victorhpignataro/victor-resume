@@ -59,7 +59,6 @@ export function Header() {
 
         {/* INFO ROW */}
         <div className="flex flex-wrap items-center gap-3 text-sm text-muted-foreground mt-3">
-
           <div className="text-sm flex flex-col gap-1">
             <div className="flex items-center gap-1">
               <div className="mt-[2px]">
@@ -73,19 +72,16 @@ export function Header() {
               <MapPin className="w-4 h-4" />
               {t('header.location')}
             </span>
-
             <span className="flex items-center gap-1">
               <span className="mt-[2px]">{age} {t('header.age')}</span>
               <span className="opacity-40">•</span>
               <span>{t('header.single')}</span>
             </span>
           </div>
-
         </div>
 
         {/* STACK BADGES */}
         <div className="flex flex-wrap gap-2 mt-4">
-
           {primaryStack.map((tech) => (
             <span
               key={tech.name}
@@ -99,7 +95,6 @@ export function Header() {
               {tech.name}
             </span>
           ))}
-
           {secondaryStack.map((tech) => (
             <span
               key={tech}
@@ -108,11 +103,8 @@ export function Header() {
               {tech}
             </span>
           ))}
-
         </div>
-
       </div>
-
       {/* ACTIONS */}
       <div className="flex flex-col items-end gap-3 justify-between">
         <div className="flex flex-col items-end gap-2">
@@ -132,13 +124,11 @@ export function Header() {
             <span>{t('header.portfolio')}</span>
           </Link>
         </div>
-        
         <div className="flex items-center gap-2">
           <LanguageToggle />
           <ModeToggle />
         </div>
       </div>
-
     </header>
   )
 }
