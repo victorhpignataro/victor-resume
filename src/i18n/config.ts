@@ -155,7 +155,7 @@ const resources = {
           },
           {
             name: "Calendar Events",
-            description: "Event management application. User: demo | Password: demo",
+            description: "Event management application. User: demo@demo.com | Password: demo",
             url: "https://calendar-events-lovat.vercel.app/login"
           }
         ]
@@ -316,7 +316,7 @@ const resources = {
           },
           {
             name: "Calendar Events",
-            description: "Aplicativo de gerenciamento de eventos. Usuário: demo | Senha: demo",
+            description: "Aplicativo de gerenciamento de eventos. Usuário: demo@demo.com | Senha: demo",
             url: "https://calendar-events-lovat.vercel.app/login"
           }
         ]
