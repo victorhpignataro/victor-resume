@@ -33,7 +33,7 @@ const resources = {
           {
             role: "Developer",
             company: "Neppo Tecnologia",
-            period: "12/2022 – Present",
+            period: "12/2022 – 09/2026",
             description: [
               "Refactored UI improving usability and user experience.",
               "Developed frontend architecture for a ticket platform.",
@@ -155,7 +155,7 @@ const resources = {
           },
           {
             name: "Calendar Events",
-            description: "Event management application",
+            description: "Event management application. User: demo | Password: demo",
             url: "https://calendar-events-lovat.vercel.app/login"
           }
         ]
@@ -192,7 +192,7 @@ const resources = {
           {
             role: "Desenvolvedor",
             company: "Neppo Tecnologia",
-            period: "12/2022 – Presente",
+            period: "12/2022 – 09/2026",
             description: [
               "Refatoração de UI melhorando a usabilidade e experiência do usuário.",
               "Desenvolvimento da arquitetura frontend para uma plataforma de tickets.",
@@ -316,7 +316,7 @@ const resources = {
           },
           {
             name: "Calendar Events",
-            description: "Aplicativo de gerenciamento de eventos",
+            description: "Aplicativo de gerenciamento de eventos. Usuário: demo | Senha: demo",
             url: "https://calendar-events-lovat.vercel.app/login"
           }
         ]
