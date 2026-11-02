@@ -17,7 +17,6 @@ function Experience() {
               role={job.role}
               company={job.company}
               period={job.period}
-              description={job.description}
               stack={job.stack}
             />
           ),
@@ -31,11 +30,10 @@ interface JobProps {
   role: string;
   company: string;
   period: string;
-  description: string[];
   stack?: string[];
 }
 
-function Job({ role, company, period, description, stack }: JobProps) {
+function Job({ role, company, period, stack }: JobProps) {
   return (
     <div className="relative">
       <div className="flex items-start justify-between gap-4">
