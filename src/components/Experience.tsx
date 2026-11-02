@@ -6,40 +6,38 @@ function Experience() {
   return (
     <section className="bg-card p-6 rounded-xl border">
       <h2 className="text-lg font-semibold text-primary mb-6">
-        {t('experience.title')}
+        {t("experience.title")}
       </h2>
 
       <div className="space-y-6">
-
-        {(t('experience.jobs', { returnObjects: true }) as any[]).map((job: any, index: number) => (
-          <Job
-            key={index}
-            role={job.role}
-            company={job.company}
-            period={job.period}
-            description={job.description}
-            stack={job.stack}
-          />
-        ))}
-
+        {(t("experience.jobs", { returnObjects: true }) as any[]).map(
+          (job: any, index: number) => (
+            <Job
+              key={index}
+              role={job.role}
+              company={job.company}
+              period={job.period}
+              description={job.description}
+              stack={job.stack}
+            />
+          ),
+        )}
       </div>
     </section>
-  )
+  );
 }
 
 interface JobProps {
-  role: string
-  company: string
-  period: string
-  description: string[]
-  stack?: string[]
+  role: string;
+  company: string;
+  period: string;
+  description: string[];
+  stack?: string[];
 }
 
 function Job({ role, company, period, description, stack }: JobProps) {
   return (
     <div className="relative">
-
-
       <div className="flex items-start justify-between gap-4">
         <h3 className="font-semibold text-foreground">
           {role} — {company}
@@ -48,12 +46,6 @@ function Job({ role, company, period, description, stack }: JobProps) {
         <span className="text-sm text-muted-foreground whitespace-nowrap">
           {period}
         </span>
-      </div>
-
-      <div className="mt-3 text-sm text-muted-foreground space-y-2">
-        {description.map((text, i) => (
-          <p key={i}>{text}</p>
-        ))}
       </div>
 
       {stack && (
@@ -68,9 +60,8 @@ function Job({ role, company, period, description, stack }: JobProps) {
           ))}
         </div>
       )}
-
     </div>
-  )
+  );
 }
 
-export default Experience
+export default Experience;
